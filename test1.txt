@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+	float a,b,x,s,k,r;
+	printf("Enter a -> ");
+	scanf("%f", &a);
+	printf("Enter b -> ");
+	scanf("%f", &b);
+	printf("Enter x -> ");
+	scanf("%f", &x);
+	s = a * b;
+	if (s == x)
+		printf("\n %f a * b = %f ", s);
+	else
+	{
+		if (s < x)
+			printf("\n  s / x = %f ", s / x);
+		else
+			if (x == 0)
+				printf("NO WORK");
+
+		else
+			printf("\n  s - x = %f", s - x);
+	}
+}
